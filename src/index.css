@@ -1,13 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-* { box-sizing: border-box; }
-html, body, #root { height: 100%; }
-body { font-family: Tajawal, system-ui, sans-serif; direction: rtl; background: #F7F6F1; color: #172321; margin: 0; }
-
-@media (max-width:1023px) {
-  .app-shell > aside { right: -16rem !important; transition: right .3s !important; }
-  .app-shell > div.z-30 ~ aside { right: 0 !important; }
-  .app-shell:has(> div.z-30) > aside { right: 0 !important; }
-}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{font-family:Tajawal,system-ui,sans-serif;direction:rtl;background:#F7F6F1;color:#172321;margin:0}
+@media (min-width:1024px){aside[style]{transform:none!important}}
