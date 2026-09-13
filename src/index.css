@@ -7,3 +7,9 @@ html, body, #root { height: 100%; }
 body { font-family: Tajawal, system-ui, sans-serif; direction: rtl; background: #F7F6F1; color: #172321; margin: 0; }
 
 @media (max-width:1023px){.app-shell>aside{transform:translateX(100%)!important}.app-shell>div[class*="z-30"]~aside{transform:translateX(0)!important}}
+
+/* MSF_V3 */
+@media (max-width:1023px){
+.app-shell>aside{right:-20rem!important;transition:right .3s ease!important}
+.app-shell>div~aside{right:0!important}
+}
