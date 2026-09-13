@@ -723,7 +723,7 @@ function Shell({ children, title }) {
   return (
     <div className="app-shell min-h-screen bg-[#F4F6F5]">
       {open && <div className="fixed inset-0 z-30 bg-slate-900/40 lg:hidden" onClick={() => setOpen(false)} />}
-      <aside className={`fixed inset-y-0 right-0 z-40 flex w-64 flex-col bg-[#065A4C] text-white transition-transform lg:translate-x-0 ${open ? "translate-x-0" : "translate-x-full"}`}>
+      <aside style={{transform: open ? "translateX(0)" : "translateX(100%)"}} className="fixed inset-y-0 right-0 z-40 flex w-64 flex-col bg-[#065A4C] text-white transition-transform lg:translate-x-0">
         <div className="flex items-center gap-3 border-b border-white/10 px-4 py-4">
           <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10"><LogoMark size={36} /></div>
           <div className="min-w-0">
