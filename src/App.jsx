@@ -157,9 +157,9 @@ function buildSeed() {
     { id: "cus2", name: "قسم المشتريات - شركة اليمن للسفر", phone: "01234567", phone2: "", id_number: "", address: "صنعاء - شارع الزبيري", type: "شركة", company_name: "شركة اليمن للسفر والسياحة", notes: "تعامل شهري بعقود", created_at: addDays(-100) },
   ];
   const users = [
-    { id: "u1", username: "owner", password: "Owner@2026!", full_name: "مالك المكتب", role: "owner" },
-    { id: "u2", username: "accountant", password: "Accountant@2026!", full_name: "خالد المحاسب", role: "accountant" },
-    { id: "u3", username: "receptionist", password: "Receptionist@2026!", full_name: "سامي الاستقبال", role: "receptionist" },
+    { id: "u1", username: "admin", password: "1234", full_name: "مالك المكتب", role: "owner" },
+    { id: "u2", username: "hasib", password: "2345", full_name: "خالد المحاسب", role: "accountant" },
+    { id: "u3", username: "istiqbal", password: "3456", full_name: "سامي الاستقبال", role: "receptionist" },
   ];
   const profiles = users.map((u) => ({ id: u.id, username: u.username, full_name: u.full_name, role: u.role, created_at: addDays(-200) }));
 
