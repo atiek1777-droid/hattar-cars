@@ -1,2 +1,7 @@
-@tailwind base;@tailwind components;@tailwind utilities;*{box-sizing:border-box}html,body,#root{height:100%}body{font-family:Tajawal,system-ui,sans-serif;direction:rtl;background:#F7F6F1;color:#172321;margin:0}
-#mobile-menu-toggle{display:none;position:fixed;top:12px;right:12px;z-index:1000;width:48px;height:48px;border-radius:50%;background:#0FA58C;color:white;border:none;font-size:22px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.2)}#mobile-menu-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:999}@media(max-width:900px){#mobile-menu-toggle{display:flex;align-items:center;justify-content:center}body.sidebar-open #mobile-menu-overlay{display:block}body:not(.sidebar-open) aside,body:not(.sidebar-open) [class*=sidebar]{transform:translateX(105%)!important;transition:transform .3s}body.sidebar-open aside,body.sidebar-open [class*=sidebar]{transform:translateX(0)!important;z-index:1001!important}body.sidebar-open{overflow:hidden}}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { font-family: Tajawal, system-ui, sans-serif; direction: rtl; background: #F7F6F1; color: #172321; margin: 0; }
